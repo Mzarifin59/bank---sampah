@@ -1,0 +1,128 @@
+body{
+    margin: 0px;
+    padding: 0px;
+  }
+  /* CSS untuk navbar */
+  .navbar {
+      background-color: #618264;
+      overflow: hidden; /* Mencegah overflow content */
+      display: flex; /* Menggunakan flexbox untuk mengatur layout */
+      align-items: center; /* Mengatur elemen vertikal di tengah navbar */
+      padding: 10px; /* Ruang di sekitar elemen navbar */
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0px;
+  
+    }
+  
+   /* CSS untuk logo dan judul di kiri */
+  .left-side {
+    flex: 1; /* Memanfaatkan sebagian besar ruang di sebelah kiri */
+    display: flex; /* Menggunakan flexbox untuk mengatur layout */
+    align-items: center; /* Mengatur elemen vertikal di tengah */
+  }
+
+  .logo {
+    width: 50px; /* Lebar logo */
+    height: 50px; /* Tinggi logo */
+    margin-right: 10px; /* Ruang di sebelah kanan logo */
+  }
+
+  .title {
+    color: white; /* Warna teks judul */
+    font-size: 24px; /* Ukuran teks judul */
+  }
+
+  /* CSS untuk daftar halaman di kanan */
+  .right-side {
+    flex: 1; /* Memanfaatkan sebagian besar ruang di sebelah kanan */
+    text-align: right; /* Teks di sebelah kanan */
+    position: relative;
+    top: -20px;
+  }
+
+  .right-side a img {
+    width: 50px; /* Lebar logo */
+    height: 50px; /* Tinggi logo */
+    margin-left: 10px; /* Ruang di sebelah kanan logo */
+    position: relative;
+    top: 20px;
+  }
+
+  .navbar a {
+    color: white; /* Warna teks link */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    margin: 0 10px; /* Ruang di sekitar link */
+  }
+    .Tabel1{
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      height: 100vh;
+    background-color: #f0f0f0;
+ 
+    }
+
+    .Awal{
+    background-color: #f0f0f0;
+    margin: 0px;
+    padding: 20px;
+    }
+
+    .warga{
+      position: relative;
+      top: -30px;
+    }
+
+    .warga table{
+      margin: 30px;
+      padding: 30px;
+    }
+
+    .awal h2{
+      font-size: 40px;
+      margin-left: 20px;
+    }
+
+.warga table, th, td{
+  border: 1px solid black;
+}
+
+.Tabel2{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  background-color: #B0D9B1;
+}
+
+.kedua{
+  background-color: #B0D9B1;
+  margin: 0px;
+  padding: 20px;
+  }
+
+  .iuran{
+    position: relative;
+    top: -30px;
+  }
+
+  .iuran table{
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .kedua h2{
+    font-size: 40px;
+    margin-left: 20px;
+  }
+
+.iuran table, th, td{
+border: 1px solid black;
+}
+
+
+  

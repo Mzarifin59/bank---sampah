@@ -1,0 +1,767 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+/* CSS yang sudah ada */
+
+/* CSS untuk navbar */
+.navbar {
+  background-color: #618264;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.left-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.title {
+  color: white;
+  font-size: 24px;
+}
+
+.right-side {
+  flex: 1;
+  text-align: right;
+  position: relative;
+  top: -20px;
+}
+
+.right-side a img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  position: relative;
+  top: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+} 
+
+/* Style untuk layar berukuran kecil (misalnya, perangkat seluler) */
+@media only screen and (max-width: 600px) {
+  .right-side{
+    margin-top: 30px;
+  }
+  .left-side,
+  .right-side {
+    width: 100%; /* Menggunakan lebar 100% untuk mengisi layar penuh */
+    text-align: center; /* Pusatkan teks */
+  }
+
+  .right-side select {
+    width: 100%; /* Menggunakan lebar 100% untuk dropdown */
+    margin: 10px 0; /* Menambahkan margin antara dropdown dan tautan */
+  }
+}
+
+
+  #judul{
+    margin: 0px;
+    background-image:url(img/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .kolom1{
+    margin-top: 90px;
+  }
+
+  .kolom1 h2{
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .kolom1 p{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .wrapper1 {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+
+#section1{
+  background-color: #f0f0f0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+.deskripsi{
+  margin-top: 0px;
+  margin-left: 70px;
+  position: relative;
+  top: -30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Lebar penuh */
+}
+
+.text-container{
+  flex: 1; /* Mengisi sebagian besar lebar container */
+  text-align: left; /* Teks di sebelah kiri */
+}
+
+.deskripsi h2{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.deskripsi p{
+    max-width: 400px; /* Atur lebar maksimum di sini */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Menambahkan elipsis (...) jika teks terpotong */
+    text-align: left;
+    font-size: 20px;
+}
+
+.deskripsi button{
+  background-color: #445D48; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none; /* Menghapus garis batas */
+    padding: 10px 20px; /* Padding (ruang dalam tombol) */
+    border-radius: 5px; /* Sudut bulat */
+    cursor: pointer; /* Menampilkan kursor tangan saat mengarahkan mouse ke tombol */
+    position: relative;
+    top: 20px;
+}
+
+.deskripsi button:hover{
+  background-color: #79AC78; /* Warna latar belakang saat tombol dihover */
+}
+
+.deskripsi img{
+ max-width: 40%;
+ float: right;
+ margin-right: 40px;
+}
+ 
+
+
+#section2 {
+  background-color: #B0D9B1;
+  padding: 60px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.jdl{
+  text-align: left;
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 0px;
+  padding: 0px;
+  position: relative;
+  top: -60px;
+}
+
+
+#section3{
+  background-color: #79AC78;
+  padding: 60px;
+  text-align: left;
+  margin: 0px;
+  padding-top: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.jdl1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.text{
+  flex: 1; /* Mengisi sebagian besar lebar container */
+  text-align: left; /* Teks di sebelah kiri */
+}
+
+.jdl1 img{
+  max-width: 50%;
+  float: left;
+}
+
+.jdl1 h2{
+  font-size: 45px;
+  font-weight: 600;
+  position: relative;
+  top: -20px;
+  
+}
+
+.jdl1 button{
+    background-color: #445D48; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none; /* Menghapus garis batas */
+    padding: 10px 20px; /* Padding (ruang dalam tombol) */
+    border-radius: 5px; /* Sudut bulat */
+    cursor: pointer; /* Menampilkan kursor tangan saat mengarahkan mouse ke tombol */
+    position: relative;
+    top: -20px;
+}
+
+
+
+/* Style untuk layar berukuran kecil (misalnya, perangkat seluler) */
+@media only screen and (max-width: 600px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column; /* Mengubah tata letak menjadi kolom */
+    align-items: center; /* Pusatkan elemen */
+  }
+
+  .left-side {
+    text-align: center; /* Pusatkan teks di kiri */
+    margin-bottom: 10px; /* Tambahkan margin antara bagian kiri dan kanan */
+  }
+
+  .logo {
+    max-width: 80%; /* Mengurangi lebar logo agar muat di layar kecil */
+  }
+
+  .right-side {
+    width: 100%; /* Lebar penuh */
+    text-align: center; /* Pusatkan tautan di kanan */
+  }
+
+  .right-side a {
+    display: block;
+    margin: 10px 0; /* Menambahkan margin antar tautan */
+  }
+
+  .right-side select {
+    display: block; /* Tampilkan dropdown pada layar kecil */
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Section 1 */
+  #judul {
+    padding-bottom: 150px; /* Mengurangi padding pada layar kecil */
+  }
+
+  .kolom1 {
+    margin-top: 50px; /* Mengurangi margin atas pada layar kecil */
+  }
+
+  .kolom1 h2 {
+    font-size: 40px; /* Mengurangi ukuran font pada layar kecil */
+  }
+
+  .kolom1 p {
+    font-size: 16px; /* Mengurangi ukuran font pada layar kecil */
+  }
+
+  /* Section 2 */
+  #section1 {
+    padding: 30px; /* Mengurangi padding pada layar kecil */
+  }
+
+  .deskripsi {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .deskripsi img {
+    max-width: 80%; /* Mengurangi lebar gambar pada layar kecil */
+    margin: 20px 0;
+    margin-right: 40px;
+  }
+
+  /* Section 3 */
+  #section3 {
+    padding: 30px; /* Mengurangi padding pada layar kecil */
+    background-color: #618264;
+  }
+
+  .jdl1 {
+    flex-direction: column; /* Mengubah tata letak menjadi kolom pada layar kecil */
+    align-items: center; /* Pusatkan elemen */
+  }
+
+  .jdl1 img {
+    max-width: 80%; /* Mengurangi lebar gambar pada layar kecil */
+    margin: 5px 0;
+  }
+
+  .jdl1 h2 {
+    font-size: 30px; /* Mengurangi ukuran font pada layar kecil */
+    position: static;
+  }
+
+  .jdl1 button {
+    top: 0; /* Reset posisi tombol */
+  }
+}
+
+
+/* Untuk Login */
+.log{
+  margin: 120px;
+}
+
+form {
+  width: 300px; /* Lebar form */
+  margin: 0 auto; /* Untuk meletakkan form di tengah */
+  padding: 30px; /* Jarak antara form dengan tepi */
+  padding-right: 50px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #f2f2f2; /* Warna latar belakang form */
+  border: 1px solid #ccc; /* Garis tepi form */
+  border-radius: 5px; /* Sudut membulat pada form */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan form */
+}
+
+/* CSS untuk mengatur tampilan label dan input */
+label {
+  display: block; /* Membuat label menjadi blok sehingga muncul di bawah input */
+  margin-bottom: 10px; /* Jarak antara setiap label dan input */
+}
+
+input {
+  width: 100%; /* Lebar input */
+  padding: 10px; /* Jarak dalam input */
+  margin-bottom: 20px; /* Jarak antara setiap input */
+  border: 1px solid #ccc; /* Garis tepi input */
+  border-radius: 5px; /* Sudut membulat pada input */
+}
+
+button {
+  background-color: #79AC78; /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks tombol */
+  border: none; /* Menghilangkan garis tepi tombol */
+  border-radius: 5px; /* Sudut membulat pada tombol */
+  padding: 10px 20px; /* Jarak dalam tombol */
+  cursor: pointer; /* Mengubah kursor saat di atas tombol */
+}
+
+button:hover {
+  background-color: #445D48; /* Warna latar belakang saat tombol dihover */
+}
+
+@media only screen and (max-width: 600px) {
+  .log {
+      margin: 10px;
+      margin-top: 170px;
+  }
+
+  form {
+      width: 90%; /* Lebar form untuk perangkat mobile */
+      padding: 10px; /* Jarak antara form dengan tepi */
+  }
+
+  input {
+      margin-bottom: 10px; /* Jarak antara setiap input untuk perangkat mobile */
+      width: 90%;
+  }
+}
+
+/* Untuk Register */
+
+.regis{
+  margin: 100px;
+}
+
+.regis form {
+  width: 300px; /* Lebar form */
+  margin: 0 auto; /* Untuk meletakkan form di tengah */
+  padding: 30px; /* Jarak antara form dengan tepi */
+  padding-right: 50px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #f2f2f2; /* Warna latar belakang form */
+  border: 1px solid #ccc; /* Garis tepi form */
+  border-radius: 5px; /* Sudut membulat pada form */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan form */
+}
+
+/* CSS untuk mengatur tampilan label dan input */
+.regis label {
+  display: block; /* Membuat label menjadi blok sehingga muncul di bawah input */
+  margin-bottom: 10px; /* Jarak antara setiap label dan input */
+}
+
+.regis input {
+  width: 100%; /* Lebar input */
+  padding: 10px; /* Jarak dalam input */
+  margin-bottom: 20px; /* Jarak antara setiap input */
+  border: 1px solid #ccc; /* Garis tepi input */
+  border-radius: 5px; /* Sudut membulat pada input */
+}
+
+.regis input[type="radio"]{
+  width: auto;
+  margin-right: 10px;
+}
+
+.regis button {
+  background-color: #79AC78; /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks tombol */
+  border: none; /* Menghilangkan garis tepi tombol */
+  border-radius: 5px; /* Sudut membulat pada tombol */
+  padding: 10px 20px; /* Jarak dalam tombol */
+  cursor: pointer; /* Mengubah kursor saat di atas tombol */
+}
+
+.regis button:hover {
+  background-color: #445D48; /* Warna latar belakang saat tombol dihover */
+}
+
+/* Untuk Profil */
+.profile {
+  width: 300px; /* Lebar form */
+  margin: 0 auto; /* Untuk meletakkan form di tengah */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 100px;
+  text-align: center;
+  background-color: #f2f2f2; /* Warna latar belakang form */
+  border: 1px solid #ccc; /* Garis tepi form */
+  border-radius: 5px; /* Sudut membulat pada form */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan form */
+  justify-content: center;
+  align-items: center;
+}
+
+.desc img{
+  width: 60%;
+  height: 30%;
+}
+
+/* Style untuk layar berukuran kecil (misalnya, perangkat seluler) */
+@media only screen and (max-width: 600px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    max-width: 80%;
+  }
+
+  .right-side {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right-side a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .right-side img {
+    max-width: 80%;
+    margin: 10px 0;
+  }
+
+  /* Profil */
+  .profile {
+    width: 80%; /* Lebar disesuaikan */
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px; /* Padding disesuaikan */
+  }
+
+  .desc img {
+    width: 100%; /* Lebar gambar penuh */
+    height: auto; /* Tinggi otomatis agar gambar tidak terdistorsi */
+    margin-bottom: 20px;
+  }
+}
+
+
+/*Halaman From Bayar*/
+.pembayaran{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+
+.pembayaran form {
+  width: 300px; /* Lebar form */
+  margin: 0 auto; /* Untuk meletakkan form di tengah */
+  padding: 30px; /* Jarak antara form dengan tepi */
+  padding-right: 50px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #f2f2f2; /* Warna latar belakang form */
+  border: 1px solid #ccc; /* Garis tepi form */
+  border-radius: 5px; /* Sudut membulat pada form */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan form */
+}
+
+.pembayaran label {
+  display: block; /* Membuat label menjadi blok sehingga muncul di bawah input */
+  margin-bottom: 10px; /* Jarak antara setiap label dan input */
+}
+
+.pembayaran input {
+  width: 100%; /* Lebar input */
+  padding: 10px; /* Jarak dalam input */
+  margin-bottom: 20px; /* Jarak antara setiap input */
+  border: 1px solid #ccc; /* Garis tepi input */
+  border-radius: 5px; /* Sudut membulat pada input */
+}
+
+.pembayaran button {
+  background-color: #79AC78; /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks tombol */
+  border: none; /* Menghilangkan garis tepi tombol */
+  border-radius: 5px; /* Sudut membulat pada tombol */
+  padding: 10px 20px; /* Jarak dalam tombol */
+  cursor: pointer; /* Mengubah kursor saat di atas tombol */
+}
+
+.pembayaran button:hover {
+  background-color: #445D48; /* Warna latar belakang saat tombol dihover */
+}
+
+/* Style untuk layar berukuran kecil (misalnya, perangkat seluler) */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    max-width: 80%;
+  }
+
+  .right-side {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right-side a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .right-side select {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .pembayaran {
+    margin: 20px;
+  }
+
+  .pembayaran form {
+    width: 80%; /* Lebar form disesuaikan */
+    margin: 0 auto;
+    padding: 20px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .pembayaran label {
+    margin-bottom: 8px;
+  }
+
+  .pembayaran input {
+    width: calc(100% - 20px); /* Lebar input disesuaikan */
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+
+  .pembayaran button {
+    width: 100%; /* Tombol penuh lebar */
+  }
+}
+
+
+/*Untuk halaman artikel */
+.satu{
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2; /* Warna latar belakang form */
+  position: relative;
+  top: -50px;
+  height: 520vh;
+
+}
+ 
+  .artikel{
+    margin: 50px;
+    margin-right: 70px;
+    text-align: left;
+    position: relative;
+    top: 50px;
+  }
+    
+  .artikel h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .bagian1{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: -20px;
+   
+  }
+
+  .bagian1 img{
+    width: 50%;
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image horizontally */
+
+  }
+  
+  .bagian2{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: -20px;
+  }
+
+  .bagian2 img{
+    width: 50%;
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image horizontally */
+
+  }
+
+  .bagian2 h2{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .bagian2 h3{
+    font-size: 25px ;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .bagian2 p{
+    display: flex;
+    flex: 1;
+    text-align: left;
+  }
+
+  .bagian3{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+  }
+
+  .bagian3 img{
+    width: 50%;
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image horizontally */
+
+  }
+
+  .bagian3 h2{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .bagian3 h3{
+    font-size: 25px ;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .bagian3 p{
+    display: flex;
+    flex: 1;
+    text-align: left;
+  }
+
+  /* CSS untuk perangkat dengan lebar viewport 600px atau kurang */
+@media only screen and (max-width: 600px) {
+  .bagian1 {
+      font-size: 16px; /* misalnya, ukuran font yang lebih kecil */
+      /* gaya lainnya untuk tampilan mobile */
+  }
+
+  .bagian1 img {
+      width: 100%; /* agar gambar mengisi lebar viewport */
+      margin-left: 0; /* menghapus margin kiri pada gambar */
+  }
+
+  .bagian2 {
+    font-size: 16px; /* misalnya, ukuran font yang lebih kecil */
+    /* gaya lainnya untuk tampilan mobile */
+}
+
+.bagian2 img {
+    width: 100%; /* agar gambar mengisi lebar viewport */
+    margin-left: 0; /* menghapus margin kiri pada gambar */
+}
+
+.bagian3 {
+  font-size: 16px; /* misalnya, ukuran font yang lebih kecil */
+  /* gaya lainnya untuk tampilan mobile */
+}
+
+.bagian3 img {
+  width: 100%; /* agar gambar mengisi lebar viewport */
+  margin-left: 0; /* menghapus margin kiri pada gambar */
+}
+}
+
+
+
+
+
+
+
+

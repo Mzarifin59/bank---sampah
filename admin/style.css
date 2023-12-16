@@ -1,0 +1,413 @@
+body{
+    margin: 0px;
+    padding: 0px;
+  }
+  /* CSS untuk navbar */
+  .navbar {
+      background-color: #618264; /* Warna latar belakang navbar */
+      overflow: hidden; /* Mencegah overflow content */
+      display: flex; /* Menggunakan flexbox untuk mengatur layout */
+      align-items: center; /* Mengatur elemen vertikal di tengah navbar */
+      padding: 30px; /* Ruang di sekitar elemen navbar */
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0px;
+      justify-content: center;
+  
+    }
+
+    .left-side {
+        flex: 1; /* Memanfaatkan sebagian besar ruang di sebelah kiri */
+        display: flex; /* Menggunakan flexbox untuk mengatur layout */
+        align-items: center; /* Mengatur elemen vertikal di tengah */
+        justify-content: space-between;
+      }
+
+    .left-side img{
+      width: 15%;
+      height: 15%;
+      float: right;
+      
+      
+    }
+    
+      .title {
+        color: white; /* Warna teks judul */
+        font-size: 40px; /* Ukuran teks judul */
+        font-weight: 600;
+        margin-left: 20px;
+      }
+
+      .navbar a {
+        color: white; /* Warna teks link */
+        text-decoration: none; /* Menghapus garis bawah pada link */
+        margin: 0px; /* Ruang di sekitar link */
+      }
+
+    nav {
+        background-color: #79AC78;
+        color: #fff; /* Warna teks */
+        padding: 5px;
+        overflow: hidden;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav2 ul {
+        list-style-type: none; /* Menghapus poin pada daftar */
+        padding: 0; /* Menghapus padding default */
+        display: flex; /* Menggunakan flexbox untuk tata letak horizontal */
+        margin-left: 20px;
+    }
+
+    .nav2 ul li:hover{
+        background-color: #445D48; /* Warna latar belakang saat tombol dihover */
+        padding: 5px;
+
+    }
+
+    .nav2 li {
+        margin-right: 20px; /* Memberi jarak antara item menu */
+    }
+
+    .nav2 a {
+        text-decoration: none; /* Menghapus garis bawah pada tautan */
+        color: #fff; /* Warna teks tautan */
+    }
+
+    .nav2 form{
+      justify-content:space-between ;
+      float: right;
+      margin-left: 550px;
+    }
+
+    .Tabel1{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        height: 100vh;
+        margin: auto;
+      background-color: #f0f0f0 ;
+   
+      }
+  
+      .Awal{
+      background-color: #f0f0f0;
+      margin: 0px;
+      padding: 0px;
+      }
+  
+      .warga{
+        position: relative;
+        top: -30px;
+      }
+  
+      .warga table{
+        margin: auto;
+        padding: 0px;
+      }
+  
+      .jdl h2{
+        font-size: 40px;
+        margin-left: 20px;
+      }
+
+      .warga button {
+        background-color: #618264;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin: 10px auto;
+      }
+
+      .warga button:hover{
+        background-color: #B0D9B1;
+      }
+  
+  .warga table, th, td{
+    border: 1px solid black;
+  }
+
+  /* Bagian Data 2*/
+
+  .Tabel2{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    background-color: #B0D9B1;
+  }
+  
+  .kedua{
+    background-color: #B0D9B1;
+    margin: 0px;
+    padding: 0px;
+    }
+  
+    .iuran{
+      position: relative;
+      top: -30px;
+    }
+  
+    .iuran table{
+      margin: 30px;
+      padding: 0px;
+    }
+  
+    .kedua h2{
+      font-size: 40px;
+      margin-left: 20px;
+    }
+
+    .iuran button {
+      background-color: #618264;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: block;
+      margin: 10px auto;
+    }
+
+    .iuran button:hover{
+      background-color: #B0D9B1;
+    }
+  
+  .iuran table, th, td{
+  border: 1px solid black;
+  }
+
+  
+  /*Bagian Tambah Data Warga */
+
+  .Tambah1{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    background-color: #B0D9B1;
+  }
+  
+  .first{
+    background-color: #B0D9B1;
+    margin: 0px;
+    padding: 0px;
+    }
+  
+    .warga1{
+      position: relative;
+      top: -30px;
+    }
+  
+    .warga1 table{
+      margin: 30px;
+      padding: 0px;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .first h2{
+      font-size: 40px;
+      margin-left: 20px;
+    }
+  
+  .warga1 table, th, td{
+  border: 1px solid black;
+  }
+
+  .tabel_tambah{
+    margin: 30px;
+    text-align: center;
+  }
+
+  .form-container {
+    background-color: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-container h2 {
+    margin-right:0px;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+    
+
+}
+
+.form-container input {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-radius: 5px;
+}
+
+.form-container input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.form-container button {
+  background-color: #618264;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+}
+
+.form-container button:hover {
+   background-color: #B0D9B1;
+}
+
+/*Bagian Tambah Data Iuran */
+
+.Tambah2{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  height: 80vh;
+  background-color: #B0D9B1;
+}
+
+.second{
+  background-color: #B0D9B1;
+  margin: 0px;
+  padding: 0px;
+  }
+
+  .iur1{
+    position: relative;
+    top: -30px;
+  }
+
+  .iur1 table{
+    margin: 30px;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .second h2{
+    font-size: 40px;
+    margin-left: 20px;
+  }
+
+.iur1 table, th, td{
+border: 1px solid black;
+}
+
+.tabel_iuran{
+  margin: 30px;
+  text-align: center;
+}
+
+.form-container {
+  background-color: none;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-container h2 {
+  margin-right:0px;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+  
+
+}
+
+.form-container input {
+width: 50%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+border-radius: 5px;
+}
+
+.form-container input[type="radio"] {
+width: auto;
+margin-right: 10px;
+}
+
+.form-container select {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container select option {
+  padding: 5px;
+}
+
+.form-container select:focus {
+  border-color: #618264; /* Ganti warna saat dipilih/fokus */
+}
+
+.form-container button {
+background-color: #618264;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+display: block;
+margin: 10px auto;
+}
+
+.form-container button:hover {
+ background-color: #B0D9B1;
+}
+
+/* Untuk Profil */
+.profile {
+  width: 300px; /* Lebar form */
+  margin: 0 auto; /* Untuk meletakkan form di tengah */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 100px;
+  text-align: center;
+  background-color: #f2f2f2; /* Warna latar belakang form */
+  border: 1px solid #ccc; /* Garis tepi form */
+  border-radius: 5px; /* Sudut membulat pada form */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan form */
+  justify-content: center;
+  align-items: center;
+}
+
+.desc img{
+  width: 60%;
+  height: 30%;
+}
+
+
+
+
+
+
+  
+
+  
+

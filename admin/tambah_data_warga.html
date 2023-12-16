@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bank Sampah Admin</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Navbar -->
+ <div class="navbar">
+     <!-- Logo dan judul di kiri -->
+     <div class="left-side">
+       <img src="logo.png" alt="Logo" class="logo">
+       <div class="title">Bank Sampah</div>
+     </div>
+   </div>
+     </div>
+
+     <nav>
+        <div class="nav2">
+        <ul>
+            <li><a href="index.php">Data Warga</a></li>
+            <li><a href="data2.php">Data Iuran</a></li>
+            <li><a href="#">Tambah Data Warga</a></li>
+            <li><a href="#">Tambah Data Iuran</a></li>
+        </ul>
+    </div>
+    </nav>
+
+    <section class="Tabel1">
+        <section class="Awal">
+        <section class="warga">
+        <div class = "jdl">
+        <h2>Data Warga</h2>
+        </div>
+        <table  >
+            <tr>
+                    <th>NIK</th>
+                    <th>Nama</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Jenis Kelamin</th>
+                    <th>RW</th>
+                    <th>RT</th>
+                    <th>No Rumah</th>
+                    <th>No HP</th>
+                    <th>Opsi</th>
+                </tr>
+                <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+    
+              <?php
+            $dbHost = "127.0.0.1";
+            $dbUser = "rifky";
+            $dbPass = "aku050906";
+            $dbName = "iuran_sampah_db";
+            
+            $conn = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName);
+            
+            if (!$conn) {
+                die("Connection failed: " . mysqli_connect_error());
+            }
+            
+            $sql = "SELECT * FROM warga";
+            $result = mysqli_query($conn, $sql);
+    
+            if (mysqli_num_rows($result) > 0) {
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo "<tr>";
+                    echo "<td>" . $row["NIK"] . "</td>";
+                    echo "<td>" . $row["Nama"] . "</td>";
+                    echo "<td>" . $row["Tanggal_Lahir"] . "</td>";
+                    echo "<td>" . $row["Jenis_Kelamin"] . "</td>";
+                    echo "<td>" . $row["RW"] . "</td>";
+                    echo "<td>" . $row["RT"] . "</td>";
+                    echo "<td>" . $row["No_Rumah"] . "</td>";
+                    echo "<td>" . $row["No_HP"] . "</td>";
+                    <td>
+                        <a href="#">Edit</a>
+                        <a href="#">Hapus</a>
+                    </td>
+                    echo "</tr>";
+                }
+            } else {
+                echo "<tr><td colspan='8'>No data available</td></tr>";
+            }
+            
+            mysqli_close($conn);
+    
+              ?> 
+              </table>
+          </section>
+          </section>
+          </section>
+
+</body>
+</html>
